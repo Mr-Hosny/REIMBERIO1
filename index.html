@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIMBERIO PROJECT</title>
+  <!-- style css -->
+  <style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jim+Nightshade&display=swap'); */
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul li {
+      list-style-type: none;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+
+    body {
+      margin: 0rem auto;
+      font-family: sans-serif;
+    }
+
+    .project {
+      width: 600px;
+      margin: 0 auto;
+      border: 1px solid black;
+    }
+
+    nav {
+      background-color: black;
+      color: white;
+      padding: 1.75rem;
+      text-align: center;
+      margin-bottom: 1.45rem;
+    }
+
+    nav .nav-title {
+      font-size: 28px;
+      font-family: "Inria Serif";
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    nav a {
+      color: white;
+      font-family: sans-serif;
+      font-size: 17px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #D9D9D9;
+      padding: 1rem;
+    }
+
+    .header-info {
+      text-align: center;
+    }
+
+    .header-info h1 {
+      font-size: 45px;
+      text-align: center;
+      line-height: 28px;
+    }
+
+    .header-info .the {
+      font-family: "Jim Nightshade";
+      margin-top: 1rem;
+    }
+
+    .header-info .vintage {
+      font-family: serif;
+    }
+
+    .header-info .collection {
+      font-family: "Inria Serif";
+      font-style: italic;
+    }
+
+    .header-info p {
+      font-size: 16px;
+      margin: 1rem 0;
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    .header-info .btn {
+      color: white;
+      background-color: black;
+      padding: 10px;
+      text-align: center;
+      margin: 1rem auto;
+    }
+
+    .img-main {
+      height: 300px;
+      height: 300px;
+    }
+
+    .cta-section {
+      text-align: center;
+      background-color: rgb(55, 105, 55);
+      margin: 1.75rem;
+      padding: 1rem;
+      color: white;
+    }
+
+    .cta-section h1 {
+      font-size: 32px;
+      text-transform: uppercase;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .cta-section h3 {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin: 5px 0;
+      font-style: italic;
+    }
+
+    .products-list {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+    }
+
+    .product-item img {
+      width: 180px;
+      margin-bottom: 10px;
+    }
+
+    .product-item h4 {
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 0.45rem;
+    }
+
+    .product-item a {
+      margin-top: 1rem;
+      color: black;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3rem;
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    footer a {
+      color: white;
+    }
+
+
+    @media screen and (max-width: 640px) {
+
+      .project {
+        width: 538px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+      }
+
+
+      .header-info .btn {
+        margin-bottom: 2rem;
+      }
+
+      .img-main {
+        margin-top: 2rem;
+        margin-left: 3rem;
+      }
+
+
+      .products-list {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .product-item {
+        margin: 1rem 0;
+      }
+
+      .product-item img {
+        width: 450px;
+        height: 500px;
+        margin-bottom: 10px;
+      }
+
+      .product-item h4 {
+        font-size: 24px;
+      }
+
+      .product-item a {
+        font-size: 20px;
+        margin-top: 1rem;
+        color: black;
+        text-decoration: underline;
+      }
+    }
+
+    @media screen and (max-width: 570px) {
+
+      .project {
+        width: 468px;
+        margin: 0 auto;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      .cta-section h1 {
+        font-size: 26px;
+      }
+
+      .cta-section h3 {
+        font-size: 14px;
+      }
+
+
+      .product-item img {
+        width: 400px;
+        height: 460px;
+      }
+
+    }
+
+    @media screen and (max-width: 502px) {
+      .project {
+        width: 438px;
+      }
+
+      .product-item img {
+        width: 380px;
+        height: 440px;
+      }
+
+      nav .nav-title {
+        font-size: 24px;
+      }
+
+      footer a {
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (max-width: 468px) {
+      .project {
+        width: 400px;
+      }
+
+      .product-item img {
+        width: 330px;
+        height: 400px;
+      }
+
+      footer a {
+        font-size: 9px;
+      }
+
+      nav .nav-title {
+        font-size: 22px;
+      }
+
+      nav a {
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="project">
+    <nav>
+      <div>
+        <h1 class="nav-title">rimberio</h1>
+      </div>
+      <ul>
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">BAGS</a></li>
+        <li><a href="#">JACKETS</a></li>
+        <li><a href="#">TROUESERS</a></li>
+        <li><a href="#">DRESSES</a></li>
+        <li><a href="#">SHEOSES</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="header-info">
+        <h1 class="the">THE</h1>
+        <h1 class="vintage">VINATGE</h1>
+        <h1 class="collection">COLLECTIO</h1>
+        <p>We are delighted to present to you our vintage edit.</p>
+        <a href="https://shop-now.com" class="btn">SHOP NOW</a>
+      </div>
+      <div>
+        <img src="https://imagedelivery.net/B8t-3bYtbGcan-sTq11_Yg/a4e0d555-79cc-4feb-419c-13d37d9acc00/public"
+          alt="img-main" class="img-main">
+      </div>
+    </header>
+    <!-- the end of header -->
+    <div class="cta-section">
+      <h1>free shipping</h1>
+      <h3>with code: freeship. limited time only.</h3>
+    </div>
+    <!-- the end of call to action section -->
+    <div class="products-list">
+      <div class="product-item">
+        <img src="https://imagedelivery.net/B8t-3bYtbGcan-sTq11_Yg/e6a608f1-55d2-43bd-157a-a87ef1680500/public"
+          alt="beyzaa" class="img-item">
+        <h4>the best parfum</h4>
+        <a href="https://shop-now.com">SHOP NOW</a>
+      </div>
+      <div class="product-item">
+        <img src="https://imagedelivery.net/B8t-3bYtbGcan-sTq11_Yg/1a59684f-e0e3-468a-20c5-d3bdf0e03700/public"
+          alt="venick" class="img-item">
+        <h4>fondu tan</h4>
+        <a href="https://shop-now.com">SHOP NOW</a>
+      </div>
+      <div class="product-item">
+        <img src="https://imagedelivery.net/B8t-3bYtbGcan-sTq11_Yg/2c52b6ac-56df-41fb-c4a7-5d92b05fdb00/public"
+          alt="absin" class="img-item">
+        <h4>ACCUADI gIO</h4>
+        <a href="https://shop-now.com">SHOP NOW</a>
+      </div>
+    </div>
+    <!-- the end of the list product -->
+    <footer>
+      <p>123 Anywhere st., any city | <a href="number">+123-456-7890</a> | <a href="email">reallygreatsite.com</a> </p>
+    </footer>
+  </main>
+</body>
+
+</html>
